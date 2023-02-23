@@ -1,8 +1,8 @@
 :root {
   --light-color: #fffffa;
   --orange-color: #ff7200;
-  --blue-color: #3a407be3;
-  --dark-color: #021718;
+  --blue-color: #5c5e72e3;
+  --dark-color: #373d3d;
 }
 
 html {
@@ -110,6 +110,58 @@ nav .menu-items a {
   padding: 1em;
 }
 
+.hero-color-block {
+  display: inline-block;
+  height: 100px;
+  background-color: var(--blue-color);
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  color: var(--light-color);
+  font-weight: 550;
+}
+
+.intro article {
+  margin: 20px;
+  line-height: 2em;
+  align-items: center;
+}
+
+.intro .local-header {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  max-width: 920px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro .local-img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.intro p {
+  align-items: center;
+  position: relative;
+  display: block;
+  word-wrap: break-word;
+  max-width: 920px;
+
+  background: transparent;
+  border: 0;
+  margin: auto;
+  outline: 0;
+  padding: 0;
+}
+
 /* Media queries */
 @media (min-width: 1300px) {
   .wrapper {
@@ -130,5 +182,9 @@ nav .menu-items a {
   }
   nav .menu-items {
     display: none;
+  }
+
+  .logo {
+    font-size: 15px;
   }
 }
